@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 @import "variables";
 @import "reset";
+
+:root {
+    --color-red: #{$color-red};
+}
 
 body {
     background: $color-white;
@@ -11,6 +16,18 @@ body {
 
 @import "structure";
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 2.1rem;
+}
+
 .top-header {
     // background-color: darken($color-white, 5%);
     border-top: 3px solid $color-red;
@@ -20,6 +37,18 @@ body {
 
     >nav {
         justify-content: space-between;
+        @include device-mobile{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        > a > img {
+            max-width: 100%;
+            @include device-mobile{
+                margin-top: 1rem;
+                width: 280px;
+            }
+        }
 
         >ul {
             display: flex;
@@ -29,10 +58,13 @@ body {
 
             >li>a {
                 padding: 5px 10px;
+                @include device-mobile{
+                    padding: 1rem;
+                }
             }
         }
-
     }
+
 }
 
 .banner{
@@ -42,10 +74,14 @@ body {
     background-color: $color-black;
     background-blend-mode: multiply;
 
+    @include device-mobile{
+        height: calc(100vh - 125px);
+    }
+
     > .container {
         min-height: 100%;
+        color: $color-white;
         > .banner-title {
-            color: $color-white;
             font-size: 3rem;
             text-align: center;
         }
@@ -54,4 +90,21 @@ body {
             font-size: 1.3rem;
         }
     }
+}
+
+.box{
+    background-color: $color-black;
+    color: $color-white;
+    padding: 1.5rem;
+    border-radius: 4px;
+    @extend %box-shadow;
+}
+
+.button{
+    background-color: $color-red;
+    border: none;
+    color: $color-white;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
 }

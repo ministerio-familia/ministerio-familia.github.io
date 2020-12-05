@@ -1,6 +1,12 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+}
 html{
     height: 100%;
     font-size: 100%;
+    @include device-mobile {
+        font-size: 80%;
+    }
 }
 
 body{
@@ -33,4 +39,25 @@ a{
 
 button{
     appearance: none;
+    font-family: inherit;
+    outline: none;
+
+}
+input {
+    font-family: inherit;
+    outline: none;
+
+}
+
+table{
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        > td,
+        > th {
+            padding: 0.5rem 0;
+        }
+    }
 }

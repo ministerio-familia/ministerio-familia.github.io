@@ -7,11 +7,18 @@
     &.is-small{
         width: $container-width/2;
     }
+
+
+    @include device-mobile{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .section{
     padding-top: 3rem;
     padding-bottom: 3rem;
+
 }
 
 .block{

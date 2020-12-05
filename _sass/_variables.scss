@@ -2,8 +2,19 @@ $color-white: #f7f7f7;
 $color-black: #444;
 $color-red: #ed3f3c;
 
+$device-mobile: 800px;
 
 $font-family-default: "Open Sans", sans-serif;
 
 $container-width: 1200px;
 
+
+%box-shadow{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+@mixin device-mobile {
+    @media (max-width: #{$device-mobile}) {
+        @content;
+    }
+}
