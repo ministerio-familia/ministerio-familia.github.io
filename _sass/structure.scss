@@ -3,8 +3,21 @@
     margin-right: auto;
     max-width: 100%;
     width: $container-width;
+
+    &.is-small{
+        width: $container-width/2;
+    }
 }
 
+.section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.block{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 
 .is-flex{
     display: flex;
@@ -26,4 +39,12 @@
 
 .is-flex-0 {
     flex: 0;
+}
+
+
+
+@each $item in "right", "left", "center", "justify" {
+    .text-#{$item} {
+        text-align: #{$item};
+    }
 }
