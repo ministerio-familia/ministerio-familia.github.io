@@ -1,0 +1,11 @@
+<section class="banner" style="background-image: url('{{ include.image }}')">
+    <div class="container is-flex is-column is-center-v is-center-h">
+        {% if include.title %}
+        <h1 class="banner-title">{{ include.title }}</h1>
+        {% endif %}
+        
+        {% if include.description %}
+        <p class="banner-subtitle"></p>
+        {% endif %}
+    </div>
+</section>
