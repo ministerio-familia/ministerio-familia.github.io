@@ -3,3 +3,19 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Ministério da Família" # the name of your site, e.g. ACME Corp.
 lang: 'pt-br'
 cnpj: "99.999.999.99/0001-99"
+whatsapp: "98317-9545"
+description: "Projeto do Coração de Deus"
+enderecos:
+  - logradouro: "Rua Padre Pedro Pinto"
+    numero: 4935
+    bairro: "Venda Nova"
+    cidade: "Belo Horizonte"
+    uf: "MG"
+
+redes_sociais:
+  - icon: "facebook-official"
+    url: "teste"
+    nome: "Facebook"
+  - icon: "instagram"
+    url: "teste"
+    nome: "Instagram"

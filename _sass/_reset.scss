@@ -27,11 +27,15 @@ p{
 ul {
     margin: 0;
     padding: 0;
+    // list-style: none;
+}
+
+li {
     list-style: none;
 }
 
 a{
-    color: initial;
+    color: inherit;
     text-decoration: none;
     display: inline-block;
 }

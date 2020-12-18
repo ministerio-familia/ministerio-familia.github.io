@@ -7,7 +7,7 @@
 }
 
 body {
-    background: $color-white;
+    background: $color-light;
     color: $color-black;
     font-family: $font-family-default;
     padding: 0;
@@ -15,6 +15,7 @@ body {
 }
 
 @import "structure";
+@import "helpers";
 
 h1 {
     font-size: 3rem;
@@ -26,6 +27,13 @@ h2 {
 
 h3 {
     font-size: 2.1rem;
+}
+
+a{
+    transition: all 500ms ease;
+    &:hover{
+        color: $color-red;
+    }
 }
 
 .top-header {
@@ -60,6 +68,11 @@ h3 {
                 padding: 5px 10px;
                 @include device-mobile{
                     padding: 1rem;
+                }
+
+                &.active
+                {
+                    color: $color-red;
                 }
             }
         }
@@ -107,4 +120,50 @@ h3 {
     padding: 0.75rem 1rem;
     border-radius: 4px;
     cursor: pointer;
+}
+
+
+.card{
+    background-color: $color-white;
+    @extend %box-shadow;
+    padding: 1rem;
+}
+
+
+.bg-white{
+    background-color: $color-white;
+}
+
+
+.footer{
+    background-color: $color-grey;
+    // color: $color-light;
+    border-top: 3px solid $color-light;
+    // color: $color-red;
+
+    nav{
+
+        height: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        ul {
+            > li {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }       
+        }
+    }
+
+
+    
+}
+
+.copyright{
+    background-color: $color-black;
+    text-align: center;
+    font-size: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $color-light;
 }

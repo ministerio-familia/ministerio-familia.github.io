@@ -1,0 +1,49 @@
+
+@for $i from 1 through 5 {
+    .mb-#{$i}{
+        margin-bottom: #{$i * 0.5}rem;
+    }
+}
+
+
+
+/** GRID **/
+
+$gutter: 1rem;
+
+@mixin grid($prefix: '') {
+    @for $i from 1 through 12 {
+        
+        > .col#{$prefix}-#{$i} {
+            flex: 0 0 #{$i * 100%/12};
+            padding-left: $gutter/2;
+            padding-right: $gutter/2;
+        }
+    }
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
+
+    &.is-centered{
+        justify-content: center;
+    }
+
+    &.is-space-between{
+        justify-content: space-between;
+    }
+
+    &.is-space-around{
+        justify-content: space-around
+    }
+
+    @include grid();
+    
+    @include device-mobile{
+        @include grid('-md');
+    }
+}

@@ -1,0 +1,56 @@
+<footer class='section footer'>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <nav>
+                    <h4 class='block'>Endereços</h4>
+                    <ul>
+                        {% for endereco in site.enderecos %}
+                        <li>
+                            <a>
+                                {{ endereco.logradouro }}, {{ endereco.numero }}<br>{{ endereco.bairro }} - {{ endereco.cidade }}/{{ endereco.uf }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="col-4">
+                <nav>
+                    <h4 class="block">Siga-nos</h4>
+                    <ul>
+                        {% for item in site.redes_sociais %}
+                            <li>
+                                <a href="{{ item.url }}">
+                                    <i class="fa fa-{{ item.icon }} fa-fw"></i>
+                                    {{ item.nome }}
+                                </a>
+                            </li>  
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-4">
+                <nav>
+                    <h4 class='block'>Contato</h4>
+                    <ul>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=5531983179545"><i class="fa fa-whatsapp fa-fw"></i> {{ site.whatsapp }}</a>
+                        </li>
+                        {% if site.email %}
+                        <li>
+                            <a href="">
+                                <i class="fa fa-envelope fa-fw"></i> {{ site.email }}
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    &copy; 2020 - {{ site.title }} - {{ site.description }}
+</div>

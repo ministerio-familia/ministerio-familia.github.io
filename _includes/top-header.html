@@ -1,14 +1,14 @@
 <header class="top-header">
     <nav class="container is-flex">
         <a href="/">
-            <img src="/assets/img/logo.jpeg" alt="{{ site.title }}" title="{{ site.description }}" width="250">
+            <img src="/assets/img/logo.png" alt="{{ site.title }}" title="{{ site.description }}" width="250">
         </a>
         <ul>
             <li>
-                <a href="/">Início</a>
+                <a href="/" class="{% if page.url == '/'%}active{% endif %}">Início</a>
             </li>
             <li>
-                <a href="/doacoes">Doações</a>
+                <a href="/doacoes" class="{% if page.url == '/doacoes' %}active{% endif %}">Doações</a>
             </li>
         </ul>
     </nav>
