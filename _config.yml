@@ -1,6 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Ministério da Família" # the name of your site, e.g. ACME Corp.
+title: "Ministério Família"
 lang: 'pt-br'
 cnpj: "99.999.999.99/0001-99"
 whatsapp: "98317-9545"
@@ -22,3 +22,15 @@ redes_sociais:
 
   
 google_api_key: AIzaSyBOdEQYo2LW1pnOjjcOO0nAHBEOnuMDFIA
+
+
+cultos:
+  - dia: 'Quartas-feiras'
+    nome: 'Quarta das Maravilhas de Deus'
+    horarios: '08:15 e às 19:00'
+  - dia: 'Sexta-Feira'
+    nome: 'Sexta do Favor de Deus'
+    horarios: '08:15 e às 19:00'
+  - dia: 'Domingos'
+    nome: 'Culto da Família'
+    horarios: '09:00, 15:00 e às 19:00'

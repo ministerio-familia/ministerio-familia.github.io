@@ -9,7 +9,7 @@
 
 /** GRID **/
 
-$gutter: 1rem;
+$gutter: 2rem;
 
 @mixin grid($prefix: '') {
     @for $i from 1 through 12 {
@@ -44,6 +44,6 @@ $gutter: 1rem;
     @include grid();
     
     @include device-mobile{
-        @include grid('-md');
+        @include grid('-sm');
     }
 }

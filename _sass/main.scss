@@ -127,11 +127,39 @@ a{
     background-color: $color-white;
     @extend %box-shadow;
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     border-radius: 4px;
+    margin-bottom: 1rem;
+
+    min-height: 300px;
+
+    &.is-center-v{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &.has-bg-image{
+        @extend %bg-image-cover;
+    }
+
+    &.has-bg-red{
+        background-color: darken($color-red, 15%);
+        color: $color-light;
+    }
+
+    &.has-bg-image.has-bg-red{
+        background-blend-mode: multiply;
+    }
+
+    .card-title{
+        font-size: 1.5rem;
+    }
+
+
 }
+
+
 
 
 .bg-white{

@@ -60,3 +60,13 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.hr{
+    color: transparentize($color-black, 0.85);
+    background-color: currentColor;
+    border: none;
+    width: 100%;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
