@@ -7,7 +7,7 @@
                     <ul>
                         {% for endereco in site.enderecos %}
                         <li>
-                            <a href="/onde-encontrar">
+                            <a href="/onde-encontrar" class="link">
                                 {{ endereco.logradouro }}, {{ endereco.numero }}<br>{{ endereco.bairro }} - {{ endereco.cidade }}/{{ endereco.uf }}
                             </a>
                         </li>
@@ -22,7 +22,7 @@
                     <ul>
                         {% for item in site.redes_sociais %}
                             <li>
-                                <a href="{{ item.url }}">
+                                <a href="{{ item.url }}" class="link">
                                     <i class="fa fa-{{ item.icon }}"></i>
                                     {{ item.nome }}
                                 </a>
@@ -36,11 +36,11 @@
                     <h4>Contato</h4>
                     <ul>
                         <li>
-                            <a href="https://api.whatsapp.com/send?phone=5531983179545"><i class="fa fa-whatsapp"></i> {{ site.whatsapp }}</a>
+                            <a  class="link" href="https://api.whatsapp.com/send?phone=5531983179545"><i class="fa fa-whatsapp"></i> {{ site.whatsapp }}</a>
                         </li>
                         {% if site.email %}
                         <li>
-                            <a href="">
+                            <a class="link">
                                 <i class="fa fa-envelope fa-fw"></i> {{ site.email }}
                             </a>
                         </li>
