@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Onde Estamos"
+description: "Nossa localização"
+permalink: /onde-estamos
+---
+
+{% capture endereco_principal %}{{ site.enderecos[0].logradouro }} - {{ site.enderecos[0].numero }} - {{ site.enderecos[0].cidade }}{% endcapture %}
+
+<section class="section">
+    <div class="container">
+        <h1 class="mb-5">Onde estamos</h1>
+        <iframe
+        width="100%"
+        height="450"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key={{ site.google_api_key }}&q={{ endereco_principal | urlencode }}&zoom=18" allowfullscreen>
+        </iframe>
+    </div>
+</div>

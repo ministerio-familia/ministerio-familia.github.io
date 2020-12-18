@@ -1,13 +1,13 @@
 <footer class='section footer'>
     <div class="container">
-        <div class="row">
-            <div class="col-4">
+        <div class="row is-centered">
+            <div class="col-4 col-md-10">
                 <nav>
                     <h4 class='block'>Endereços</h4>
                     <ul>
                         {% for endereco in site.enderecos %}
                         <li>
-                            <a>
+                            <a href="/onde-estamos">
                                 {{ endereco.logradouro }}, {{ endereco.numero }}<br>{{ endereco.bairro }} - {{ endereco.cidade }}/{{ endereco.uf }}
                             </a>
                         </li>
@@ -16,7 +16,7 @@
                 </nav>
             </div>
             
-            <div class="col-4">
+            <div class="col-4 col-md-10">
                 <nav>
                     <h4 class="block">Siga-nos</h4>
                     <ul>
@@ -31,7 +31,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-4">
+            <div class="col-4 col-md-10">
                 <nav>
                     <h4 class='block'>Contato</h4>
                     <ul>
