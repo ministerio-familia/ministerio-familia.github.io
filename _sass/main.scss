@@ -126,7 +126,11 @@ a{
 .card{
     background-color: $color-white;
     @extend %box-shadow;
-    padding: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
 }
 
 
