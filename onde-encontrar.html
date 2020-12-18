@@ -1,15 +1,15 @@
 ---
 layout: default
 title: "Onde Estamos"
-description: "Nossa localização"
-permalink: /onde-estamos
+description: "Veja aqui nossos endereços, contato e horários de cultos"
+permalink: /onde-encontrar
 ---
 
 {% capture endereco_principal %}{{ site.enderecos[0].logradouro }} - {{ site.enderecos[0].numero }} - {{ site.enderecos[0].cidade }}{% endcapture %}
 
 <section class="section bg-white">
     <div class="container">
-        <h1 class="mb-5">Onde fica o {{ site.title }}?</h1>
+        <h1 class="mb-5">Como encontrar o {{ site.title }}?</h1>
         
         <div class="row">
             <div class="col-6 col-sm-12">
@@ -21,12 +21,14 @@ permalink: /onde-estamos
                 </iframe>
             </div>
             <div class="col-sm-12 col-6">
-                <div class="p-2">
-                    <h2>Endereços</h2>
-                    {% for endereco in site.enderecos %}
-                        <div>{{ endereco.logradouro }}, {{ endereco.numero }} - {{ endereco.bairro }}<br>{{ endereco.cidade }}/{{ endereco.uf }}</div>
-                    {% endfor %}
-                </div>
+                <hr class="hr show-sm">
+                <h2>Endereços</h2>
+                {% for endereco in site.enderecos %}
+                    <div>{{ endereco.logradouro }}, {{ endereco.numero }} - {{ endereco.bairro }}<br>{{ endereco.cidade }}/{{ endereco.uf }}</div>
+                {% endfor %}
+                <hr class="hr">
+                <h2>Contato</h2>
+                <div><strong>Whatsapp:</strong> {{ site.whatsapp }}</div>
             </div>
         </div>
         <hr class="hr">

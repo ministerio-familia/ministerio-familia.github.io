@@ -1,13 +1,13 @@
 <footer class='section footer'>
     <div class="container">
         <div class="row is-centered">
-            <div class="col-4 col-md-10">
+            <div class="col-4 col-sm-12 mb-2">
                 <nav>
                     <h4>Endereços</h4>
                     <ul>
                         {% for endereco in site.enderecos %}
                         <li>
-                            <a href="/onde-estamos">
+                            <a href="/onde-encontrar">
                                 {{ endereco.logradouro }}, {{ endereco.numero }}<br>{{ endereco.bairro }} - {{ endereco.cidade }}/{{ endereco.uf }}
                             </a>
                         </li>
@@ -16,14 +16,14 @@
                 </nav>
             </div>
             
-            <div class="col-4 col-md-10">
+            <div class="col-4 col-sm-12 mb-2">
                 <nav>
                     <h4 >Siga-nos</h4>
                     <ul>
                         {% for item in site.redes_sociais %}
                             <li>
                                 <a href="{{ item.url }}">
-                                    <i class="fa fa-{{ item.icon }} fa-fw"></i>
+                                    <i class="fa fa-{{ item.icon }}"></i>
                                     {{ item.nome }}
                                 </a>
                             </li>  
@@ -31,12 +31,12 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-4 col-md-10">
+            <div class="col-4 col-sm-12">
                 <nav>
                     <h4>Contato</h4>
                     <ul>
                         <li>
-                            <a href="https://api.whatsapp.com/send?phone=5531983179545"><i class="fa fa-whatsapp fa-fw"></i> {{ site.whatsapp }}</a>
+                            <a href="https://api.whatsapp.com/send?phone=5531983179545"><i class="fa fa-whatsapp"></i> {{ site.whatsapp }}</a>
                         </li>
                         {% if site.email %}
                         <li>

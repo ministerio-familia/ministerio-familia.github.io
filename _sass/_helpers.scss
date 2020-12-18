@@ -47,3 +47,11 @@ $gutter: 2rem;
         @include grid('-sm');
     }
 }
+
+
+.show-sm{
+    display: none;
+    @include device-mobile {
+        display: block;
+    }
+}
