@@ -15,12 +15,12 @@ permalink: /sobre
 
 <section class="section bg-white">
     <div class="container">
-        <h2 class="mb-5 text-center">A história do {{ site.title }}</h2>
+        <h2 class="mb-5 text-center">A história do <span class="text-red">{{ site.title }}</span></h2>
         <div class="row is-centered-v">
-            <div class="col-4">
-                <div class="card has-bg-red has-bg-image" style="background-image: url('/assets/img/familia.jpg');"></div>
+            <div class="col-4 col-sm-12">
+                <div class="card  has-bg-red has-bg-hover has-bg-image" style="background-image: url('/assets/img/familia.jpg');"></div>
             </div>
-            <div class="col-8 text-justify">
+            <div class="col-8 col-sm-12 text-justify">
                 O ministério {{ site.title }} surgiu no ano 2020 e Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ab quod, sit possimus laborum eligendi ea quos fuga? Eius, dicta eaque? Ducimus esse eius totam! Fuga facere eveniet obcaecati ipsam vitae repudiandae voluptatem expedita saepe itaque maxime architecto illo, at nam minima libero perferendis laborum doloribus placeat adipisci corporis culpa officiis? Odit magnam dignissimos atque distinctio, quaerat repudiandae excepturi nihil soluta architecto, debitis in. Perferendis laudantium neque exercitationem ab, cum iusto at eaque dolorum repellendus nisi unde quis, ipsum deleniti numquam accusantium expedita suscipit blanditiis rerum. Hic eveniet quo nisi! Totam numquam a blanditiis reiciendis non in dolores esse exercitationem qui molestiae consectetur, assumenda cum odit? Aut doloremque dignissimos obcaecati ad quos neque ipsa illum aspernatur autem suscipit quod enim optio soluta temporibus explicabo repellat pariatur, delectus quo voluptatem consectetur velit modi placeat similique voluptate. Non explicabo quam eum, aliquid ullam mollitia at accusamus, ipsa modi libero itaque, possimus reprehenderit!
             </div>
         </div>
@@ -31,11 +31,11 @@ permalink: /sobre
         <h2 class="mb-5 text-center">Pastores</h2>
         <div class="row is-centered">
             {% for pastor in site.pastores %}
-            <div class="col-5 col-sm-12">
+            <div class="col-5 col-sm-12 mb-2">
                 <div class="card" style="height: 100%;">
                     <header class="text-center">
                         <img src="/assets/img/pastores/{{ pastor.imagem }}" alt="" class="mb-2 img-responsive img-rounded shadow" height="200" width='200'>
-                        <h3 class="card-title text-center">{{ pastor.nome }}</h3>
+                        <h3 class="card-title text-center text-grey-dark">{{ pastor.nome }}</h3>
                     </header>
                     <div class="block text-justify"><small>{{ pastor.bio }}</small></div>
                 </div>

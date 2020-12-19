@@ -56,6 +56,21 @@
     }
 }
 
+@each $name, $color in (
+    "red": $color-red, 
+    "white" : $color-white, 
+    "grey" : $color-grey, 
+    "grey-dark" : $color-grey-dark,
+    "black" : $color-black) {
+
+    .text-#{$name}{
+        color: #{$color};
+    }   
+
+    .bg-#{$name} {
+        background-color: #{$color};
+    }
+}
 .title{
     margin-top: 2rem;
     margin-bottom: 2rem;

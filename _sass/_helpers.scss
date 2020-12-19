@@ -1,11 +1,27 @@
 
-@for $i from 1 through 5 {
+@for $i from 1 through 8 {
     $value: #{$i * 0.5}rem;
     .mb-#{$i}{
         margin-bottom: $value;
     }
     .mt-#{$i} {
         margin-top: $value;
+    }
+
+    .m{
+        margin: $value;
+    }
+
+    .pt{
+        padding-top: $value;
+    }
+
+    .pb{
+        padding-bottom: $value;
+    }
+
+    .p{
+        padding: $value;
     }
 }
 
