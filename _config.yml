@@ -17,7 +17,7 @@ redes_sociais:
     url: "teste"
     nome: "Facebook"
   - icon: "instagram"
-    url: "teste"
+    url: "https://www.instagram.com/_ministeriofamilia"
     nome: "Instagram"
 
   
@@ -28,9 +28,12 @@ cultos:
   - dia: 'Quartas-feiras'
     nome: 'Quarta das Maravilhas de Deus'
     horarios: '08:15 e às 19:00'
+    imagem: '/assets/img/mar-vermelho.png'
   - dia: 'Sexta-Feira'
     nome: 'Sexta do Favor de Deus'
     horarios: '08:15 e às 19:00'
+    imagem: '/assets/img/cruz.jpg'
   - dia: 'Domingos'
     nome: 'Culto da Família'
     horarios: '09:00, 15:00 e às 19:00'
+    imagem: '/assets/img/familia.jpg'
