@@ -27,13 +27,22 @@ google_api_key: AIzaSyBOdEQYo2LW1pnOjjcOO0nAHBEOnuMDFIA
 cultos:
   - dia: 'Quartas-feiras'
     nome: 'Quarta das Maravilhas de Deus'
-    horarios: '08:15 e às 19:00'
+    horarios: '08:15, 15:00 e às 19:00'
     imagem: '/assets/img/mar-vermelho.png'
   - dia: 'Sexta-Feira'
     nome: 'Sexta do Favor de Deus'
-    horarios: '08:15 e às 19:00'
+    horarios: '08:15, 15:00 e às 19:00'
     imagem: '/assets/img/cruz.jpg'
   - dia: 'Domingos'
     nome: 'Culto da Família'
     horarios: '09:00, 15:00 e às 19:00'
     imagem: '/assets/img/familia.jpg'
+
+
+pastores:
+  - nome: 'Reinaldo Rosário'
+    bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque sequi illum excepturi, fugit nemo tempora tempore mollitia sapiente laboriosam a voluptate dolorum nobis at consectetur corporis qui modi maiores assumenda facilis reprehenderit sint quaerat. Excepturi sed est modi corrupti, consequatur quibusdam quasi aut nihil ullam, fuga perferendis hic deserunt illo et similique mollitia optio, commodi necessitatibus recusandae! Consequatur, animi. Quae odit alias quod perspiciatis dolore saepe totam similique, dicta corrupti. Nesciunt enim itaque consequuntur magni atque. Praesentium natus eligendi ipsum adipisci quas cupiditate cumque officiis! Perspiciatis at reiciendis ad tempore quia! Laudantium odit doloribus eos aliquam earum dolorum fugiat. Voluptatibus?'
+    imagem: 'reinaldo-rosario.jpg'
+  - nome: 'Dimas Raphael'
+    bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque sequi illum excepturi, fugit nemo tempora tempore mollitia sapiente laboriosam a voluptate dolorum nobis at consectetur corporis qui modi maiores assumenda facilis reprehenderit sint quaerat. Excepturi sed est modi corrupti, consequatur quibusdam quasi aut nihil ullam, fuga perferendis hic deserunt illo et similique mollitia optio, commodi necessitatibus recusandae! Consequatur, animi. Quae odit alias quod perspiciatis dolore saepe totam similique, dicta corrupti. Nesciunt enim itaque consequuntur magni atque. Praesentium natus eligendi ipsum adipisci quas cupiditate cumque officiis! Perspiciatis at reiciendis ad tempore quia!'
+    imagem: 'dimas-raphael.jpg'

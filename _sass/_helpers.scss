@@ -1,7 +1,11 @@
 
 @for $i from 1 through 5 {
+    $value: #{$i * 0.5}rem;
     .mb-#{$i}{
-        margin-bottom: #{$i * 0.5}rem;
+        margin-bottom: $value;
+    }
+    .mt-#{$i} {
+        margin-top: $value;
     }
 }
 
@@ -11,7 +15,15 @@
 
 $gutter: 2rem;
 
+
 @mixin grid($prefix: '') {
+
+    .col{
+        flex: 0 0 auto;
+        padding-left: $gutter/2;
+        padding-right: $gutter/2;
+    }
+
     @for $i from 1 through 12 {
         
         > .col#{$prefix}-#{$i} {
@@ -31,6 +43,10 @@ $gutter: 2rem;
 
     &.is-centered{
         justify-content: center;
+    }
+
+    &.is-centered-v{
+        align-items: center;
     }
 
     &.is-space-between{
@@ -54,4 +70,9 @@ $gutter: 2rem;
     @include device-mobile {
         display: block;
     }
+}
+
+.shadow
+{
+    @extend %box-shadow;
 }

@@ -70,3 +70,12 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.img-responsive{
+    max-width: 100%;
+}
+
+.img-rounded {
+    object-fit: cover;
+    border-radius: 100%;
+}

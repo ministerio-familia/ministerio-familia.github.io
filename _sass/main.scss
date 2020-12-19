@@ -42,6 +42,7 @@ h3 {
     box-shadow: 0 0 1px rgba(0, 0, 0, .15);
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+    background-color: $color-white;
 
     >nav {
         justify-content: space-between;
@@ -87,6 +88,12 @@ h3 {
     background-color: $color-black;
     background-blend-mode: multiply;
 
+
+    &.has-bg-red{
+        background-color: $color-red;
+    }
+
+    
     @include device-mobile{
         height: calc(100vh - 125px);
     }
