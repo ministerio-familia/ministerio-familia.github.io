@@ -7,14 +7,14 @@ whatsapp: "98317-9545"
 description: "Projeto do Coração de Deus"
 enderecos:
   - logradouro: "Rua Padre Pedro Pinto"
-    numero: 4935
+    numero: 4938
     bairro: "Venda Nova"
     cidade: "Belo Horizonte"
     uf: "MG"
 
 redes_sociais:
   - icon: "facebook-official"
-    url: "teste"
+    url: "https://www.facebook.com/ministeriofamiliapcd"
     nome: "Facebook"
   - icon: "instagram"
     url: "https://www.instagram.com/_ministeriofamilia"
@@ -27,11 +27,11 @@ google_api_key: AIzaSyBOdEQYo2LW1pnOjjcOO0nAHBEOnuMDFIA
 cultos:
   - dia: 'Quartas-feiras'
     nome: 'Quarta das Maravilhas de Deus'
-    horarios: '08:15, 15:00 e às 19:00'
+    horarios: '08:00, 15:00 e às 19:00'
     imagem: '/assets/img/mar-vermelho.png'
   - dia: 'Sexta-Feira'
     nome: 'Sexta do Favor de Deus'
-    horarios: '08:15, 15:00 e às 19:00'
+    horarios: '08:00, 15:00 e às 19:00'
     imagem: '/assets/img/cruz.jpg'
   - dia: 'Domingos'
     nome: 'Culto da Família'
@@ -44,5 +44,8 @@ pastores:
     bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque sequi illum excepturi, fugit nemo tempora tempore mollitia sapiente laboriosam a voluptate dolorum nobis at consectetur corporis qui modi maiores assumenda facilis reprehenderit sint quaerat. Excepturi sed est modi corrupti, consequatur quibusdam quasi aut nihil ullam, fuga perferendis hic deserunt illo et similique mollitia optio, commodi necessitatibus recusandae! Consequatur, animi. Quae odit alias quod perspiciatis dolore saepe totam similique, dicta corrupti. Nesciunt enim itaque consequuntur magni atque. Praesentium natus eligendi ipsum adipisci quas cupiditate cumque officiis! Perspiciatis at reiciendis ad tempore quia! Laudantium odit doloribus eos aliquam earum dolorum fugiat. Voluptatibus?'
     imagem: 'reinaldo-rosario.jpg'
   - nome: 'Dimas Raphael'
+    bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque sequi illum excepturi, fugit nemo tempora tempore mollitia sapiente laboriosam a voluptate dolorum nobis at consectetur corporis qui modi maiores assumenda facilis reprehenderit sint quaerat. Excepturi sed est modi corrupti, consequatur quibusdam quasi aut nihil ullam, fuga perferendis hic deserunt illo et similique mollitia optio, commodi necessitatibus recusandae! Consequatur, animi. Quae odit alias quod perspiciatis dolore saepe totam similique, dicta corrupti. Nesciunt enim itaque consequuntur magni atque. Praesentium natus eligendi ipsum adipisci quas cupiditate cumque officiis! Perspiciatis at reiciendis ad tempore quia!'
+    imagem: 'dimas-raphael.jpg'
+  - nome: 'Victor Hugo'
     bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque sequi illum excepturi, fugit nemo tempora tempore mollitia sapiente laboriosam a voluptate dolorum nobis at consectetur corporis qui modi maiores assumenda facilis reprehenderit sint quaerat. Excepturi sed est modi corrupti, consequatur quibusdam quasi aut nihil ullam, fuga perferendis hic deserunt illo et similique mollitia optio, commodi necessitatibus recusandae! Consequatur, animi. Quae odit alias quod perspiciatis dolore saepe totam similique, dicta corrupti. Nesciunt enim itaque consequuntur magni atque. Praesentium natus eligendi ipsum adipisci quas cupiditate cumque officiis! Perspiciatis at reiciendis ad tempore quia!'
     imagem: 'dimas-raphael.jpg'
