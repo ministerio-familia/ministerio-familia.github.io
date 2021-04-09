@@ -2,7 +2,7 @@
 <div class="row">
     {% for culto in site.cultos %}
     <div class="col-4 col-sm-12">
-        <div class="card has-bg-image has-bg-red is-center-v text-center" style="background-image: url({{ culto.imagem }});">
+        <div class="card has-bg-image has-bg-red is-center-v text-center is-default-height" style="background-image: url({{ culto.imagem }}">
             <h4 class='card-title'>{{ culto.nome }}</h4>
             <div>{{ culto.dia }}</div>
             <div>{{ culto.horarios }} horas</div>

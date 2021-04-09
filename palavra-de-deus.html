@@ -1,0 +1,77 @@
+---
+layout: default
+title: "A Palavra de Deus"
+description: "Ouça a palavra de Deus através das pregações e cultos do Ministério da Família"
+permalink: /palavra-de-deus
+---
+
+<section class="section bg-white">
+    <div class="container">
+        <h1 class="text-center">Ouça a <span class="text-red">Palavra de Deus</span></h1>
+        <p class="text-center">Ouça a palavra de Deus através dos mensagens e transmissões ao vivo gravadas pelo {{ site.title }}</p>
+    </div>
+</section>
+<section class="section">
+    <div class="container is-small has-text-centered">
+        <iframe 
+            width="100%" 
+            height="400" src="https://www.youtube.com/embed/Z2NLFzqSBto" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <h2 class="mb-5 text-center">Pregações</h2>
+        <div class="row" id="youtube-container">
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    var container = document.querySelector('#youtube-container');
+    
+    axios.get('https://www.googleapis.com/youtube/v3/search', {
+        params: {
+            key: 'AIzaSyBOdEQYo2LW1pnOjjcOO0nAHBEOnuMDFIA',
+            //channelId: 'UCKqtKhzJHuEXqnbvjI3br1w',
+            channelId: 'UCKqtKhzJHuEXqnbvjI3br1w', 
+            order: 'date',
+            part: 'snippet,id',
+            type: 'video',
+            maxResults: 36
+        }
+    }).then(function (response) {
+
+        container.innerText = '';
+
+        if (! response.data.items.length) {
+            container.innerHTML = '<div class="col-sm-12 col-4 text-center">Nenhum vídeo encontrado</div>'
+        }
+
+        response.data.items.map(function (item) {
+
+            var el = document.createElement('a')
+            el.setAttribute('class', 'card has-bg-image has-bg-red')
+            el.setAttribute('href', '#youtube-iframe');
+            el.style.backgroundImage = 'url("https://img.youtube.com/vi/' + item.id.videoId + '/hqdefault.jpg")'
+            el.style.minHeight = '13rem';
+            el.dataset.videoId = item.id.videoId
+            el.innerHTML = '<h4>' + item.snippet.title + '</h4>';
+
+           // el.addEventListener('click', changeIframeVideo);
+
+            var col = document.createElement('div')
+            col.setAttribute('class', 'col-sm-12 col-4');
+
+            col.appendChild(el)
+
+            container.appendChild(col)
+        })
+    })
+})
+</script>

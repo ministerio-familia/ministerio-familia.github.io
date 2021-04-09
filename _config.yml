@@ -24,6 +24,11 @@ redes_sociais:
 google_api_key: AIzaSyBOdEQYo2LW1pnOjjcOO0nAHBEOnuMDFIA
 
 
+banco:
+  nome: 'Bradesco'
+  agencia: 464
+  cc: '64.707-1'
+
 cultos:
   - dia: 'Quartas-feiras'
     nome: 'Quarta das Maravilhas de Deus'

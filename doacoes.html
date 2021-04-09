@@ -9,19 +9,19 @@ permalink: /doacoes
     <div class="container is-small">
         <h1>Faça uma oferta</h1>
         <p>Você pode ajudar o {{ site.title }} através de um depósito em nossa conta corrente.</p>
-        <div class="box">
+        <div class="card has-bg-red">
             <table>
                 <tr>
                     <th>Banco:</th>
-                    <td>XXX</td>
+                    <td>{{ site.banco.nome }}</td>
                 </tr>
                 <tr>
                     <th>Agência:</th>
-                    <td>9999-9</td>
+                    <td>{{ site.banco.agencia }}</td>
                 </tr>
                 <tr>
                     <th>C/C:</th>
-                    <td>00999999-9</td>
+                    <td>{{ site.banco.cc }}</td>
                 </tr>
                 <tr>
                     <th>CNPJ:</th>
