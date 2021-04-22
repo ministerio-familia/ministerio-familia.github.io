@@ -2,7 +2,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Ministério Família"
 lang: 'pt-br'
-cnpj: "99.999.999.99/0001-99"
+cnpj: "40.812.932/0001-53"
 whatsapp: "98317-9545"
 description: "Projeto do Coração de Deus"
 enderecos:
